@@ -420,19 +420,27 @@ textarea {
 
 //Start site Styles
 
+.navbar-default {
+	background: none;
+	border: none;
+}
+
+
 .header {
 	margin-top: 15px;
+	vertical-align: middle;
 }
 .sub-text {
 	display: inline-block;
 	text-align: center;
+	margin-right: 30px;
 	&-title {
 		font-family: @title-font;
 		font-size: 20px;
 		color: #030506;
 		text-transform: uppercase;
 		text-decoration: underline;
-		margin-top: 5px;
+		margin-top: 10px;
 		margin-bottom: 0;
 	}
 	&-descr {
@@ -440,4 +448,44 @@ textarea {
 		font-size: 12px;
 		color: #030506;		
 	}
+}
+
+.nav-menu {
+	.item {
+		a {
+			font-family: @info-font;
+			color: #030506;
+			font-size: 14px;
+			text-decoration: underline;
+		}
+	}
+}
+
+.sub-info-text {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	&-title {
+		font-family: @title-font;
+		font-size: 18px;
+		color: #030506;
+		margin-bottom: 0;
+	}
+	&-descr {
+		font-family: @info-font;
+		font-size: 14px;
+	}
+}
+
+.linear-info-button {
+	font-size: 14px;
+	color: #fff;
+	font-family: @info-font;
+	background: linear-gradient(to bottom, #9e0909 1%,#d30c0d 100%);
+	border: none;
+	width: 140px;
+	height: 50px;
+	border-radius: 20px;
+	margin-left: 25px;
+	vertical-align: middle;
 }

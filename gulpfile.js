@@ -29,7 +29,7 @@ var js_concat_files = ['www/js/transition.js', 'www/js/collapse.js', 'www/js/app
 /* 
 * Concatenated JS file.
 */
-var js_concat_res_path = 'www/js/';
+var js_concat_res_path = 'www/js/**/*.js';
 var js_concat_res_file = 'script.js';
 
 
@@ -130,7 +130,7 @@ gulp.task('watch',function () {
 	gulp.watch(indexFile,['browser-reload-htmlonly']);
 	gulp.watch(lessFiles,['browser-reload']);
 	//gulp.watch(lessFiles,['less','minify-css']);
-	gulp.watch(js_concat_files,['js-concat']);
+	gulp.watch(js_concat_files,['browser-reload', 'js-concat']);
 	//gulp.watch('./www/jade/*.jade',['jade']);
 });
 
